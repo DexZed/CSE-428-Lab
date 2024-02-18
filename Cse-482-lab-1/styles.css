@@ -1,0 +1,39 @@
+html{background-color: #FBFADA;}
+div>h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding:  20px;
+    background-color: #ADBC9F;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 70vh;
+
+}
+.menu{
+    flex: 1;
+    background-color: #436850;
+}
+.menu>h2{
+    text-align: center;
+}
+.list{
+    list-style: none;
+    margin-left: 15%;
+    padding: 20px;
+}
+.middle-bar{
+    padding: 20px;
+    background-color: #ADBC9F;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
+}
+div>footer{
+    vertical-align: bottom;
+    text-align: center;
+    padding: 20px;
+    background-color: #ADBC9F;
+    
+}
