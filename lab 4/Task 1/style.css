@@ -1,0 +1,10 @@
+div {
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 1rem;
+    height: 5rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}

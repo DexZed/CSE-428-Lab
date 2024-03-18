@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Form Validation</h2>
+
+<form id="myForm">
+  Name: <input type="text" id="name"><br>
+  Username: <input type="text" id="username"><br>
+  Password: <input type="password" id="password"><br>
+  Re-type password: <input type="password" id="repassword"><br>
+  Gender: 
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+  Programming skills: 
+  <input type="checkbox" id="java" name="skills" value="Java">
+  <label for="java">Java</label>
+  <input type="checkbox" id="android" name="skills" value="Android">
+  <label for="android">Android</label>
+  <input type="checkbox" id="ruby" name="skills" value="Ruby">
+  <label for="ruby">Ruby</label>
+  <input type="checkbox" id="net" name="skills" value=".Net">
+  <label for="net">.Net</label><br>
+  Contact no: <input type="text" id="contact"><br>
+  Email: <input type="email" id="email"><br>
+  College: 
+  <select id="college">
+    <option value="">Select college</option>
+    <!-- Add options for each college here -->
+  </select><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  var name = document.getElementById("name").value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var repassword = document.getElementById("repassword").value;
+  var gender = document.querySelector('input[name="gender"]:checked');
+  var contact = document.getElementById("contact").value;
+  
+  if(name == ""){
+    alert("Name cannot be empty");
+    return false;
+  }
+  
+  if(username == "" || username.includes(" ")){
+    alert("Username cannot be empty and cannot contain whitespace");
+    return false;
+  }
+  
+  if(password.length < 8 || password.length > 32){
+    alert("Password length is between 8-32 chars");
+    return false;
+  }
+  
+  if(password != repassword){
+    alert("Passwords do not match");
+    return false;
+  }
+  
+  if(gender == null){
+    alert("Gender is not selected");
+    return false;
+  }
+  
+  if(isNaN(contact)){
+    alert("Contact no. contains numbers only");
+    return false;
+  }
+  
+  alert("Form submitted successfully");
+});
+</script>
+
+</body>
+</html>

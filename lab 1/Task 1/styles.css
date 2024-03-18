@@ -1,0 +1,28 @@
+table {width: 100%;
+border: 1px solid blueviolet;
+height: 100vh;}
+th {
+    border: 1px solid black;
+    font-family: sans-serif;
+    text-align: center;
+}
+tr {
+    border: 1px solid blue;
+}
+img {
+    width: 100px;
+    margin: none;
+    padding: none;
+}
+picture {
+    width: 2rem;
+    align-content: center;
+}
+td {
+    border: 1px solid black;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* .foo {
+    
+} */
