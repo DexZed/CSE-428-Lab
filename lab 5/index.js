@@ -3,7 +3,7 @@ function validirty() {
     var password = /^[\w\d!@$%^&*()_\-+=\[\]{}\\|;:'/?<>,."`~]{8,32}$/i;
     let mobile = /^\+?(88)?0?1[3456789][0-9]{8}\b/i;
     let email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i;
-
+    var gender = $('input[name="gender"]:checked').length > 0;
     if ($("#name").val() == "" ) {
         alert("Name Cannot be empty");
     }
@@ -38,6 +38,11 @@ function validirty() {
         $("#email").css("backgroundColor","red");
     }
 
+    if (genderSelected) {
+        alert("Gender selected!");
+    } else {
+        alert("Please select a gender.");
+    }
 
 }
 
