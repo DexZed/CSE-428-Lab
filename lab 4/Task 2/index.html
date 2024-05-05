@@ -1,18 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegExp</title>
+    <title>Form</title>
 </head>
+
 <body>
-    <fieldset>
-        <legend>Form Validation</legend>
-        <label for="fname">First name : </label>
-        <input type="text" name="fname" placeholder="eg. John" id="fname" required>
-        <label for="lname">Last name : </label>
-        <input type="text" name="lname" id="lname" placeholder="eg. Doe">
-        <input type="button" onclick="validation()" value="submit">
-    </fieldset>
+    <div>
+        
+            <fieldset>
+                <legend>Form Validation</legend>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required>
+                <br><br>
+                <label for="uname">Username: </label>
+                <input type="text" name="uname" id="uname" required>
+                <br><br>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+                <br><br>
+                <label for="rpassword">Re-type password: </label>
+                <input type="password" name="rpassword" id="rpassword">
+                <br><br>
+                <p>Gender:</p>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender" >
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="gender">
+                <label for="gender">Other</label>
+                <input type="radio" name="gender" id="gender">
+                <br><br>
+                <p>Programming Skils</p>
+                <label for="skills">Java</label>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">Android</label>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">Ruby</label>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">Net</label>
+                <input type="checkbox" name="skills" id="skills">
+                <br><br>
+                <label for="contact">Contact No: </label>
+                <input type="tel" name="contact" id="contact">
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="college">College:</label>
+                <input type="tel" name="college" id="college">
+                <br><br>
+                <label for="college">College: </label>
+                <select id="college" name="college">
+                    <option value="col1">Col1</option>
+                    <option value="col2">Col2</option>
+                    <option value="col3">Col3</option>
+                    <option value="col4">Col4</option>
+                </select>
+                <br><br>
+                <input type="button" value="submit" onclick="valid();">
+            </fieldset>
+       
+        <div id="notif">
+            <ul style="list-style: none;">
+                <li id="item1"></li>
+                <li id="item2"></li>
+                <li id="item3"></li>
+                <li id="item4"></li>
+                <li id="item5"></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
 </body>
+
 </html>
